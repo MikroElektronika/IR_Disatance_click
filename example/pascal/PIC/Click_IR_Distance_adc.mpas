@@ -1,0 +1,27 @@
+unit Click_IR_Distance_adc;
+
+uses Click_IR_Distance_types;
+
+procedure irdistance_adcInit(); 
+function  irdistance_readADC() :  uint32_t; 
+
+implementation
+
+procedure irdistance_adcInit(); 
+begin
+
+    ADC_Init(); 
+
+end;
+
+function  irdistance_readADC() :  uint32_t; 
+var
+    readADC : uint32_t;
+begin
+
+    readADC := ADC_Get_Sample(0); 
+    result := readADC; 
+
+end;
+
+end.

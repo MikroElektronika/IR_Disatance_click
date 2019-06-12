@@ -1,0 +1,5 @@
+module Click_IR_Distance_config
+
+include Click_IR_Distance_types
+
+end.

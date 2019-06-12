@@ -1,0 +1,5 @@
+unit Click_IR_Distance_config;
+
+uses Click_IR_Distance_types;
+
+end.
